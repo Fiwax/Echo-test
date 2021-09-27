@@ -1,0 +1,60 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 241, 241);
+
+  .form-container {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+  }
+
+  .form__text {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .form-search__button {
+      text-transform: uppercase;
+
+      &:disabled {
+       background-color: #666;
+      }
+    }
+}
+
+ .form-search__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.599);
+}
+
+
+.pop-up {
+  position: absolute;
+  top:0;
+  left: 38%;
+}
+
+.form-search__links {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .form-search__links {
+    display: flex;
+    flex-direction:column
+  }
+}
